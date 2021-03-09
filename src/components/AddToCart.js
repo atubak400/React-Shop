@@ -8,6 +8,7 @@ import AmountButtons from './AmountButtons'
 const AddToCart = ({ product }) => {
 	// const { addToCart } = useCartContext()
 	const { id, stock, colors } = product
+	console.log(stock)
 
 	const [mainColor, setMainColor] = useState(colors[0])
 	const [amount, setAmount] = useState(1)
@@ -106,3 +107,5 @@ const Wrapper = styled.section`
 	}
 `
 export default AddToCart
+
+// onClick={() => addToCart(id, mainColor, amount, product)}

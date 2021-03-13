@@ -8,6 +8,8 @@ import Naira from 'react-naira'
 
 const CartTotals = () => {
 	const { total_amount, shipping_fee } = useCartContext()
+	const { loginWithRedirect, myUser } = useUserContext()
+
 	// const { myUser, loginWithRedirect } = useUserContext()
 
 	return (
@@ -34,7 +36,7 @@ const CartTotals = () => {
 						</span>
 					</h4>
 				</article>
-				{/* {myUser ? (
+				{myUser ? (
 					<Link to='/checkout' className='btn'>
 						proceed to checkout
 					</Link>
@@ -42,7 +44,7 @@ const CartTotals = () => {
 					<button type='button' className='btn' onClick={loginWithRedirect}>
 						login
 					</button>
-				)} */}
+				)}
 			</div>
 		</Wrapper>
 	)

@@ -33,7 +33,7 @@ const CartButtons = () => {
 				</button>
 			) : (
 				<button type='button' className='auth-btn' onClick={loginWithRedirect}>
-					Login <FaUserPlus />
+					Loginn <FaUserPlus />
 				</button>
 			)}
 		</Wrapper>

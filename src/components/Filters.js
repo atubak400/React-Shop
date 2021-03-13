@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useFilterContext } from '../context/filter_context'
-import { getUniqueValues, formatPrice } from '../utils/helpers'
+import { getUniqueValues } from '../utils/helpers'
 import { FaCheck } from 'react-icons/fa'
 import Naira from 'react-naira'
 
@@ -119,7 +119,7 @@ const Filters = () => {
 						/>
 					</div>
 					{/* end of price */}
-					{/* shippping */}
+					{/* shipping */}
 					<div className='form-control shipping'>
 						<label htmlFor='shipping'> free shipping</label>
 						<input
@@ -130,7 +130,7 @@ const Filters = () => {
 							checked={shipping}
 						/>
 					</div>
-					{/* end of  shippping */}
+					{/* end of  shipping */}
 				</form>
 				<button type='button' className='clear-btn' onClick={clearFilters}>
 					{' '}
